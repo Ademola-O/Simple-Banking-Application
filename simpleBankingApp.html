@@ -1,31 +1,43 @@
-<!DOCTYPE html>
+<!-- Tells browser this is an HTML5 document -->
+<!DOCTYPE html> 
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Simple Banking System</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <!-- Container for the Bank app -------------->
   <div class="bank-app">
     <h1>Simple Banking System</h1>
 
+    <!---- Balance display section-------------------------------------->
     <div class="balance">
       <p>Current Balance</p>
+      <!-- 'span id="balance"' allows JS to find this exact element later and change 
+       the number -->
       <h2>$<span id="balance">0</span></h2>
     </div>
 
+    <!-- Creating a area where users input amounts -->
     <div class="form-group">
-      <input type="number" id="amount" placeholder="Enter amount" />
+      <input type="number" 
+      id="amount" 
+      placeholder="Enter amount" />
     </div>
 
     <div class="buttons">
+      <!-- 'onclick' means when this button is clicked run this function-->
       <button class="deposit" onclick="deposit()">Deposit</button>
       <button class="withdraw" onclick="withdraw()">Withdraw</button>
     </div>
 
+    <!-- Transaction History Section ----------------------------------------->
     <div class="history">
       <h3>Transaction History</h3>
+      <!-- JS adds new list items here through the 'id' -->
       <ul id="transactions"></ul>
     </div>
   </div>

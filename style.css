@@ -1,0 +1,105 @@
+/* ---- Reset ----------------------------- */ 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  /* Turns page into a flexible layout system */
+  display: flex;
+  /* Moves content to the center */
+  justify-content: center;
+  padding: 40px;
+}
+
+/* --- Bank App Container Style ------------------- */
+.bank-app {
+  background: white;
+  width: 400px;
+  /* 'padding' adds space INSIDE the box */
+  padding: 25px;
+  border-radius: 12px;
+  /* Shadow effect to add a morden sleek look */ 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #1f4e79;
+}
+
+/* ---- Balance Display Section ----------------------- */
+.balance {
+  background: #1f4e79;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.balance h2 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+
+/* --- Deposit Button ------------------ */ 
+.deposit {
+  background: #28a745;
+}
+
+/* --- Withdraw Button ------------------ */ 
+.withdraw {
+  background: #dc3545;
+}
+
+/* --- Transation History Section ----- */
+.history {
+  margin-top: 20px;
+}
+
+.history ul {
+  list-style: none;
+  padding: 0;
+}
+
+.history li {
+  background: #f1f1f1;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+}
+
+
